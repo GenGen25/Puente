@@ -1,13 +1,18 @@
-const openBtn = document.getElementById("openModal");
-const closeBtn = document.getElementById("closeModal");
-const title = document.getElementById("modal");
+const modal = document.getElementById('modal');
+const overlay = document.getElementById('overlay');
+const modalText = document.getElementById('modalText');
+const openBtns = document.querySelectorAll('.openModal');
 
-
-openBtn.addEventListener("click", () => {
- modal.classList.add("open");
+openBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const message = btn.getAttribute('data-message');
+    modalText.textContent = message;
+    modal.classList.add('show');
+    overlay.classList.add('show');
+  });
 });
 
-
-closeBtn.addEventListener("click", () => {
- modal.classList.remove("open");
-});
+function closeModal() {
+  modal.classList.remove('show');
+  overlay.classList.remove('show');
+}

@@ -10,73 +10,64 @@
     grid-template-columns: auto auto auto;
     Gap:20px;
     background-color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
    }
+
    .container > div {
-    background-color: blue;
+    background-color: #1c148b;
     border: 10px solid black;
     padding: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 30px;
     text-align: center;
-    color: yellow;
+    color: white;
    }
    
    
    button {
-    border-radius: 20px;
-    border:0;
+    background-color: #1c148b;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    border-color: #1c148b;
     color: yellow;
     cursor: pointer;
-    padding: 10px 25px;
+    font-size: 30px;
+    padding: 2px 25px;
+    border-bottom-color: blue;
    }
    
-   
-   button:active {
-    opacity: 0.8;
-   }
-   
-   
-   .modal {
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity:0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transition: all 0.3s ease-in-out;
-    z-index: -1;
-   
-   
-    display:flex;
-    align-items: center;
-    justify-content: center;
-   }
-   
-   
-   .modal.open{
-    opacity:1;
-    z-index: 999;
-   }
-   
-   
-   .modal-inner{
-    background-color: blue;
-    color:aliceblue;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(255, 251, 251, 0.2), 0 6px 20px 0 rgba(243, 236, 236, 0.19);
-    padding: 15px 25px;
-    text-align:center;
-    width: 500px;
-   }
-   
-   
-   .modal-inner h2{
-    margin: 0;
-   }
-   
-   
-   .modal-inner p{
-    line-height: 24px;
-    margin: 10px 0;
-   }
-   
+    .modal {
+      display: none;
+      position: fixed;
+      top: 30%;
+      left: 30%;
+      width: 40%;
+      padding: 20px;
+      background: #1c148b;
+      z-index: 1000;
+    }
+
+    @font-face {
+      font-family: 'myFirstFont';
+      src: url(fonts/ITC_Korinna-Bold.ttf);
+    }
+
+    .modal.show {
+      color: white;
+      background-color: #1c148b;
+      font-family: 'myFirstFont';
+      font-size: 50px;
+      display: block;
+    }
+    
+    .overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+      z-index: 999;
+      display: none;
+    }
+
+    .overlay.show {
+      display: block;
+    }

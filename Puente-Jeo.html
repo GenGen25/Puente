@@ -10,51 +10,42 @@
 
 
 <body>
- <div class="grid-container">
-   <div class="item1">1</div>
- </div>
 
-
- 
-
-
-<div class="container">
+  <!--Displays Jeaopardy grid-->
+  <div class="container">
+    <!--Displays specifcally the top 3 rows-->
  <div>Puente Peer Leaders</div>
  <div>Puente Students</div>
  <div>Puente Coordinators</div>
- <div class="openModal">$100</div>
- <div>$100</div>
- <div>$100</div>
- <div>$200</div>
- <div>$200</div>
- <div>$200</div>
- <div>$300</div>
- <div>$300</div>
- <div>$300</div>
- <div>$400</div>
- <div>$400</div>
- 
 
+ <!--Displays button, when press button display block question-->
  <div>
-  <button id="openModal"> $400 </button>
-   <div class="modal" id="modal">
-     <div class="modal-inner">
-       <h2> Alex Really enjoys insect what is her favorite?</h2>
-         <p>
-           a. ladybug
-           b. 
-           c. 
-           d. 
-         </p>
-       <button id="closeModal">close</button>
-     </div>
-   </div>
+    <button class="openModal" data-message="Located">$100</button></div>
+ <div><button class="openModal" data-message="yuh">$100</button></div>
+ <div><button class="openModal" data-message="yuh">$100</button></div>
+ <div>$200</div>
+ <div>$200</div>
+ <div>$200</div>
+ <div>$300</div>
+ <div>$300</div>
+ <div>$300</div>
+ <div><button class="openModal" data-message="Alex has a favorite insect, what insect do you think it is?">$400</button></div>
+ <div>$400</div>
+ <div>$400</div>
 
- </div>
+</div>
+
+<!--Overlay is the shadow to cover grid-->
+<div id="overlay" class="overlay"></div>
+
+<!-- Modal has button connected to css and js -->
+<div id="modal" class="modal">
+  <p id="modalText">Default text</p>
+  <button onclick="closeModal()">Close</button>
 </div>
 
 
- <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 
 
