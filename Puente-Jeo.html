@@ -4,12 +4,13 @@
  <meta charset="UTF-8">
  <title> Puente Jeopardy</title>
  <link rel="stylesheet" href="stylesheet.css"/>
- <center><img src="Puente.jpg" alt="jeopardy" width="1000" height="500"/>
- </center>
+ 
 </head>
 
 
 <body>
+
+  
 
   <!--Displays Jeaopardy grid-->
   <div class="container">
@@ -17,22 +18,46 @@
  <div>Puente Peer Leaders</div>
  <div>Puente Students</div>
  <div>Puente Coordinators</div>
+ <div>Hispanic and Latin American culture</div>
+ <div>Puente Program Facts</div>
 
  <!--Displays button, when press button display block question-->
  <div>
-    <button class="openModal" data-message="Located">$100</button></div>
- <div><button class="openModal" data-message="yuh">$100</button></div>
- <div><button class="openModal" data-message="yuh">$100</button></div>
- <div>$200</div>
- <div>$200</div>
- <div>$200</div>
- <div>$300</div>
- <div>$300</div>
- <div>$300</div>
- <div><button class="openModal" data-message="Alex has a favorite insect, what insect do you think it is?">$400</button></div>
- <div>$400</div>
- <div>$400</div>
+  <!--$100-->
+    <button class="openModal" data-message="This is Vanessa's favorite color, it's calming like her mentorship style.">$100</button></div>
+ <div><button class="openModal" data-message="This welcoming space is where students can meet with peer leaders, relax, and schedule appointments.">$100</button></div>
+ <div><button class="openModal" data-message="This subject is what Mr. Huntsman teaches, helping students crunch numbers and analyze data.">$100</button></div>
+ <div><button class="openModal" data-message="This Mexican holiday celebrates loved ones who have passed and features colorful altars with marigold flowers..">$100</button></div>
+ <div><button class="openModal" data-message="This pair of courses is required during the first phase of the Puente Program and is designed to build both academic and personal foundations.">$100</button></div>
 
+ <!--$200-->
+ <div><button class="openModal" data-message="Abby helps students explore the mind and behavior in this fascinating subject.">$200</button></div>
+ <div><button  class="openModal" data-message="Genesis Twin sister Kaelin is on the path to saving lives; This is her major.">$200</div>
+<div><button  class="openModal" data-message="Ms. Bianca often sweetly refers to her partner using this affectionate nickname.">$200</div>
+ <div><button class="openModal" data-message="This famous Colombian singer is known for her hip-shaking moves and hits like Hips Don’t Lie and She Wolf">$200</button></div>
+ <div><button class="openModal" data-message="Puentistas must complete at least amount of workshops to maintain good standing in the program.">$200</button></div>
+
+ <!--$300-->
+ <div><button class="openModal" data-message="Genesis was mentored by this unforgettable Puente mentor, who left a big impact in her math career">$300</button></div>
+ <div><button class="openModal" data-message="David is in a relationship with this fellow Puente student—some say they're the power couple of the cohort.">$300</button></div>
+ <div><button class="openModal" data-message="Ms. Kim supports Puente students and also works with this program for undocumented and Hispanic-serving students—open to everyone.">$300</button></div>
+ <div><button class="openModal" data-message="This Mexican-American astronaut went from working in the fields as a child to traveling into space aboard the Space Shuttle Discovery in 2009.">$300</button></div>
+ <div><button class="openModal" data-message="Daily Double: This University of California campus, known for its ocean views and rigorous academics, was attended by everyone in cohort 4.">$300</button></div>
+
+ <!--$400-->
+ <div><button class="openModal" data-message="Alex is fascinated by this tiny six-legged creature. Some might find it creepy, but to Alex, it's cool.">$400</button></div>
+ <div><button class="openModal" data-message="When Jesus and Jason are together, friends affectionately refer to them by this ship name">$400</div>
+ <div><button class="openModal" data-message="Ms. May earned her counseling degree from this university located in the desert region of southern Nevada, known for its vibrant nightlife and entertainment industry.">$400</button></div>
+ <div><button class="openModal" data-message="This popular Mexican street food is made from corn kernels, mixed with mayo, cheese, lime, and chili powder—often served in a cup.">$400</button></div>
+ <div><button class="openModal" data-message="The Puente Program joins the major end-of-year celebration event held on this date in 2025.">$400</button></div>
+
+
+ <!--$500-->
+ <div><button class="openModal" data-message="">$500</button></div>
+ <div><button class="openModal" data-message="">$500</div>
+ <div><button class="openModal" data-message="">$500</button></div>
+ <div><button class="openModal" data-message="This person used non-violent methods to fight for the rights of migrant farm workers in the southwestern USA">$500</button></div>
+ <div><button class="openModal" data-message="A strong Puente student demonstrates academic commitment and community involvement. In return, they receive these three key privileges exclusive to the program.">$500</button></div>
 </div>
 
 <!--Overlay is the shadow to cover grid-->
@@ -41,8 +66,9 @@
 <!-- Modal has button connected to css and js -->
 <div id="modal" class="modal">
   <p id="modalText">Default text</p>
-  <button onclick="closeModal()">Close</button>
+  <button id="closeBtn">Close</button>
 </div>
+
 
 
 <script src="script.js"></script>
