@@ -9,6 +9,7 @@ let currentButton = null;
 openBtns.forEach(btn => {
   btn.addEventListener('click', () => {
     const message = btn.getAttribute('data-message');
+    const audio = btn
     modalText.textContent = message;
     modal.classList.add('show');
     overlay.classList.add('show');
