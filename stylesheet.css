@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #1c148b;
+   }
+   
+   .JepImage{
+    background-image: url("Puente.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+   }
+
+   .container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    Gap:20px;
+    background-color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+   }
+
+   .container > div {
+    background-color: #1c148b;
+    border: 10px solid black;
+    padding: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+   }
+   
+   
+   button {
+    background-color: #1c148b;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    border-color: #1c148b;
+    color: yellow;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 2px 25px;
+    border-bottom-color: blue;
+   }
+   
+    .modal {
+      display: none;
+      position: fixed;
+      top: 30%;
+      left: 30%;
+      width: 40%;
+      padding: 20px;
+      background: #1c148b;
+      z-index: 1000;
+    }
+
+    @font-face {
+      font-family: 'myFirstFont';
+      src: url(fonts/ITC_Korinna-Bold.ttf);
+    }
+
+    .modal.show {
+      color: white;
+      background-color: #1c148b;
+      font-family: 'myFirstFont';
+      font-size: 50px;
+      display: block;
+    }
+    
+    .overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+      z-index: 999;
+      display: none;
+    }
+
+    .overlay.show {
+      display: block;
+    }
+
+    .hide{
+      display: none;
+    }
